@@ -11,19 +11,19 @@
 
 //   @1    Functions used to fade in .heading on page load
 $(function(){
-	$("#firstName").fadeIn(2500);
+    $("#firstName").fadeIn(2500);
 });
 
 
 $(function(){
 
-	$("#lastName").fadeIn(3500);
+    $("#lastName").fadeIn(3500);
 });
 
 
 $(function(){
-	$("#tag-line").delay(1500).fadeIn(1000);
-})
+    $("#tag-line").delay(1500).fadeIn(1000);
+});
 
 
 //   @2   Function to call sliders over portfolio images with explanation 
@@ -32,7 +32,7 @@ $(function(){
 // Slides the green cover over the portfolio div to reveal site explanation
 var portfolioSlide = function(a, b, c, d, e){
 $(a).click(function() {
-	$(a).hide(1);
+    $(a).hide(1);
   $(b).animate({width: "100%"}, 1000 );
   $(c).delay(1001).show(1);
   $(d).show();
@@ -41,24 +41,24 @@ $(a).click(function() {
 
 //Slides the green cover away back to starting position
 $(c).click(function(){
-	$(c).hide(1);
-	$(b).animate({width: "20px"}, 1000);
-	$(d).hide();
-	$(a).delay(1001).show(1);
+    $(c).hide(1);
+    $(b).animate({width: "20px"}, 1000);
+    $(d).hide();
+    $(a).delay(1001).show(1);
 
 });
 
 // @3  Shake arrow for 1 second to notify user
 $(e).hover(function(){
-	   $(a).effect( "shake", {times:1, distance:2}, 1000 );
-	});
-}
+       $(a).effect( "shake", {times:1, distance:2}, 1000 );
+    });
+};
 
-portfolioSlide("#nvf-right", "#nvf-slide", "#nvf-left", "#nvf-slide-info", "#portfolio3")
-portfolioSlide("#pom-right", "#pom-slide", "#pom-left", "#pom-slide-info", "#portfolio2")
-portfolioSlide("#qq-right", "#qq-slide", "#qq-left", "#qq-slide-info","#portfolio1")
-portfolioSlide("#cc-right", "#cc-slide", "#cc-left", "#cc-slide-info", "#portfolio4")
-portfolioSlide("#h2r-right", "#h2r-slide", "#h2r-left", "#h2r-slide-info", "#portfolio5")
+portfolioSlide("#nvf-right", "#nvf-slide", "#nvf-left", "#nvf-slide-info", "#portfolio3");
+portfolioSlide("#pom-right", "#pom-slide", "#pom-left", "#pom-slide-info", "#portfolio2");
+portfolioSlide("#qq-right", "#qq-slide", "#qq-left", "#qq-slide-info","#portfolio1");
+portfolioSlide("#cc-right", "#cc-slide", "#cc-left", "#cc-slide-info", "#portfolio4");
+portfolioSlide("#h2r-right", "#h2r-slide", "#h2r-left", "#h2r-slide-info", "#portfolio5");
 
 
 
@@ -142,5 +142,4 @@ $(function() {
     });
     
 });
-
 
